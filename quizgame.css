@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*クイズ画面設定*/
+#Main_inner{
+	background-color: #F68D00;
+	margin-bottom:10px;
+	padding-bottom: 0px;
+}
+#quizframe {
+	margin:0 auto;
+	width:320px;
+	height:480px;
+	display:block;
+	background-color: #F68D00;
+	background-image: url("images/startTitleBg.jpg");
+	background-repeat: no-repeat;
+	background-size: 320px 480px;
+	overflow: auto;
+	-webkit-overflow-scrolling:touch;
+	-ms-touch-action: manipulation;
+	}
+#quizframe a{
+	top:368px;
+	left:47px;
+	width:231px;
+	height:71px;
+	text-align:center;
+	position:relative;
+	display: inline-block;
+}
+
+#qfinner {
+	border:none;
+	display:block;
+}
+#quizgame{
+}
+#quizcanvas{
+	width:300px;
+	height:500px;
+	margin:10px;
+}
+#canvas {
+	-ms-touch-action: none;
+	image-rendering: -o-crisp-edges;
+	image-rendering: optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;  
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+#modalclosebt{
+	width:120px;
+	height:20px;
+	padding:3px;
+	border: none;
+	margin:0;
+	background-color: #fff;
+	float:right;
+	text-align: center;
+}
+a.quiz-modal-close{
+	font-size:14px;
+	color: #000;
+	text-decoration:none;
+}
+
+/*モーダル設定*/
+#quizgamemodal {
+	display:none;
+	width:320px;
+	height:530px;
+}
+.lock {
+	overflow:hidden;
+}
+.quiz-modal-content {
+	position:relative;
+	z-index:9500;
+	width:300px;
+	height:530px;
+	margin:0;
+	padding:0;
+	border:1px solid #999;
+	background-color: #F68D00;
+	
+/*	width:100%;
+	margin: 0px;
+	padding: 0px;
+	display:inline-block;
+	overflow:auto;*/
+}
+
+.quiz-modal-content p {
+	margin:0;
+	padding:0;
+}
+
+.quiz-modal-overlay {
+	z-index:9000;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
+.modal-wrap {
+    z-index:9100;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+.quiz-modal-open {
+	color:#00f;
+	text-decoration:none;
+}
+
+.quiz-modal-open:hover {
+	cursor:pointer;
+	color:#f00;
+}
+
+.quiz-modal-close {
+	color:#00f;
+	text-decoration:none;
+}
+
+.quiz-modal-close:hover {
+	cursor:pointer;
+	color:#f00;
+}
